@@ -1,0 +1,59 @@
+{
+    "center": {
+        "name": "Sun",
+        "class": "G"
+    },
+    "single_star_systems": [],
+    "multiple_star_systems": [
+        {
+            "name": "Alpha Centauri",
+            "stars": [
+                {
+                    "name": "Alpha Centauri A",
+                    "right_ascension": {
+                        "hours": 14,
+                        "minutes": 39,
+                        "seconds": 37
+                    },
+                    "declination": {
+                        "degrees": -60,
+                        "minutes": 50,
+                        "seconds": 2
+                    },
+                    "distance": 4.37,
+                    "class": "G"
+                },
+                {
+                    "name": "Alpha Centauri B",
+                    "right_ascension": {
+                        "hours": 14,
+                        "minutes": 39,
+                        "seconds": 35
+                    },
+                    "declination": {
+                        "degrees": -60,
+                        "minutes": 50,
+                        "seconds": 14
+                    },
+                    "distance": 4.37,
+                    "class": "K"
+                },
+                {
+                    "name": "Proxima Centauri",
+                    "right_ascension": {
+                        "hours": 14,
+                        "minutes": 29,
+                        "seconds": 43
+                    },
+                    "declination": {
+                        "degrees": -62,
+                        "minutes": 40,
+                        "seconds": 46
+                    },
+                    "distance": 4.37,
+                    "class": "M"
+                }
+            ]
+        }
+    ]
+}
