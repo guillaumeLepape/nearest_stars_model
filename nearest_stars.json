@@ -15,7 +15,7 @@
             "distance": {
                 "light_years": 0
             },
-            "class": "G"
+            "spectral_type": "G2V"
         },
         {
             "name": "\u00c9toile de Barnard",
@@ -32,10 +32,10 @@
             "distance": {
                 "light_years": 5.96
             },
-            "class": "M"
+            "spectral_type": "M4.0Ve"
         },
         {
-            "name": "WISE 0855\u22120714",
+            "name": "WISE 0855-0714",
             "right_ascension": {
                 "hours": 8,
                 "minutes": 55,
@@ -49,7 +49,7 @@
             "distance": {
                 "light_years": 7.43
             },
-            "class": "Y"
+            "spectral_type": "Y4"
         },
         {
             "name": "Wolf 359",
@@ -66,7 +66,7 @@
             "distance": {
                 "light_years": 7.78
             },
-            "class": "M"
+            "spectral_type": "M6.0V"
         },
         {
             "name": "Lalande 21185",
@@ -83,7 +83,7 @@
             "distance": {
                 "light_years": 8.31
             },
-            "class": "M"
+            "spectral_type": "M2.0V"
         }
     ],
     "multiple_star_systems": [
@@ -105,7 +105,7 @@
                     "distance": {
                         "light_years": 4.37
                     },
-                    "class": "G"
+                    "spectral_type": "G2V"
                 },
                 {
                     "name": "Alpha Centauri B",
@@ -122,7 +122,7 @@
                     "distance": {
                         "light_years": 4.37
                     },
-                    "class": "K"
+                    "spectral_type": "K1V"
                 },
                 {
                     "name": "Proxima Centauri",
@@ -139,7 +139,7 @@
                     "distance": {
                         "light_years": 4.37
                     },
-                    "class": "M"
+                    "spectral_type": "M5.5Ve"
                 }
             ]
         },
@@ -161,7 +161,7 @@
                     "distance": {
                         "light_years": 6.59
                     },
-                    "class": "L"
+                    "spectral_type": "L8"
                 },
                 {
                     "name": "Luhman 16 B",
@@ -178,7 +178,7 @@
                     "distance": {
                         "light_years": 6.59
                     },
-                    "class": "T"
+                    "spectral_type": "T1"
                 }
             ]
         },
@@ -200,7 +200,7 @@
                     "distance": {
                         "light_years": 8.6
                     },
-                    "class": "A"
+                    "spectral_type": "A1V"
                 },
                 {
                     "name": "Sirius B",
@@ -217,7 +217,7 @@
                     "distance": {
                         "light_years": 8.6
                     },
-                    "class": "D"
+                    "spectral_type": "DA2"
                 }
             ]
         }

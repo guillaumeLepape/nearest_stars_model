@@ -1,24 +1,11 @@
 from __future__ import annotations
 
 import json
-from enum import Enum
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
-from pydantic import BaseModel, ConfigDict, Field
-
-
-class StarClass(str, Enum):
-    A = "A"
-    F = "F"
-    G = "G"
-    K = "K"
-    M = "M"
-    L = "L"
-    T = "T"
-    Y = "Y"
-    D = "D"
+from pydantic import BaseModel, ConfigDict
 
 
 class RightAscension(BaseModel):
@@ -48,7 +35,7 @@ class Star(BaseModel):
     right_ascension: RightAscension
     declination: Declination
     distance: Distance
-    star_class: StarClass = Field(alias="class")
+    spectral_type: str
 
     model_config = ConfigDict(extra="forbid")
 
@@ -89,18 +76,20 @@ def dms_to_radians(degrees: int | float, minutes: int, seconds: float) -> float:
     return (degrees + minutes / 60 + seconds / 3600) * (np.pi / 180)
 
 
-def star_class_color(star_class: StarClass) -> str:
+def displayed_color(spectral_type: str) -> str:
     mapping = {
-        StarClass.A: "#FFFFFF",
-        StarClass.F: "#FFFFE0",
-        StarClass.G: "#FFFF00",
-        StarClass.K: "#FFA500",
-        StarClass.M: "#FF0000",
-        StarClass.L: "#FF6347",
-        StarClass.T: "#FF69B4",
-        StarClass.Y: "#DA70D6",
-        StarClass.D: "#808080",
+        "A": "#FFFFFF",
+        "F": "#FFFFE0",
+        "G": "#FFFF00",
+        "K": "#FFA500",
+        "M": "#FF0000",
+        "L": "#FF6347",
+        "T": "#FF69B4",
+        "Y": "#DA70D6",
+        "D": "#808080",
     }
+
+    star_class = spectral_type[0]
 
     return mapping[star_class]
 
@@ -121,7 +110,7 @@ def display_plot(nearest_stars: NearestStars) -> None:
             ),
         )
 
-        ax.scatter(x, y, z, c=star_class_color(star.star_class))
+        ax.scatter(x, y, z, c=displayed_color(star.spectral_type))
         ax.text(x, y, z, star.name)
 
     for system in nearest_stars.multiple_star_systems:
@@ -144,14 +133,14 @@ def display_plot(nearest_stars: NearestStars) -> None:
                 [x, x],
                 [y, y],
                 [z - 0.2, z + 0.2],
-                c=[star_class_color(star.star_class) for star in system.stars],
+                c=[displayed_color(star.spectral_type) for star in system.stars],
             )
         elif len(system.stars) == 3:
             ax.scatter(
                 [x, x, x],
                 [y, y, y],
                 [z - 0.4, z, z + 0.4],
-                c=[star_class_color(star.star_class) for star in system.stars],
+                c=[displayed_color(star.spectral_type) for star in system.stars],
             )
 
         ax.text(x, y, z, system.name)
