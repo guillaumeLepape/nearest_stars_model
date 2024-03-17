@@ -84,6 +84,193 @@
                 "light_years": 8.31
             },
             "spectral_type": "M2.0V"
+        },
+        {
+            "name": "Ross 154",
+            "right_ascension": {
+                "hours": 18,
+                "minutes": 49,
+                "seconds": 49.46
+            },
+            "declination": {
+                "degrees": -23,
+                "minutes": 50,
+                "seconds": 10.3
+            },
+            "distance": {
+                "light_years": 9.68
+            },
+            "spectral_type": "M3.5Ve"
+        },
+        {
+            "name": "Ross 248",
+            "right_ascension": {
+                "hours": 23,
+                "minutes": 41,
+                "seconds": 54.99
+            },
+            "declination": {
+                "degrees": 44,
+                "minutes": 10,
+                "seconds": 30.2
+            },
+            "distance": {
+                "light_years": 10.3
+            },
+            "spectral_type": "M5.5Ve"
+        },
+        {
+            "name": "Epsilon Eridani",
+            "right_ascension": {
+                "hours": 3,
+                "minutes": 32,
+                "seconds": 55.84
+            },
+            "declination": {
+                "degrees": -9,
+                "minutes": 27,
+                "seconds": 29.7
+            },
+            "distance": {
+                "light_years": 10.5
+            },
+            "spectral_type": "K2V"
+        },
+        {
+            "name": "Lacaille 9352",
+            "right_ascension": {
+                "hours": 23,
+                "minutes": 5,
+                "seconds": 52.03
+            },
+            "declination": {
+                "degrees": -35,
+                "minutes": 51,
+                "seconds": 11.3
+            },
+            "distance": {
+                "light_years": 10.74
+            },
+            "spectral_type": "M0.5V"
+        },
+        {
+            "name": "Ross 128",
+            "right_ascension": {
+                "hours": 11,
+                "minutes": 47,
+                "seconds": 44.41
+            },
+            "declination": {
+                "degrees": 0,
+                "minutes": 48,
+                "seconds": 16.5
+            },
+            "distance": {
+                "light_years": 11.03
+            },
+            "spectral_type": "M4.0Vn"
+        },
+        {
+            "name": "DX Cancri",
+            "right_ascension": {
+                "hours": 8,
+                "minutes": 29,
+                "seconds": 49.5
+            },
+            "declination": {
+                "degrees": 26,
+                "minutes": 46,
+                "seconds": 37
+            },
+            "distance": {
+                "light_years": 11.67
+            },
+            "spectral_type": "M6.5Ve"
+        },
+        {
+            "name": "Tau Ceti",
+            "right_ascension": {
+                "hours": 1,
+                "minutes": 44,
+                "seconds": 4.08
+            },
+            "declination": {
+                "degrees": -15,
+                "minutes": 56,
+                "seconds": 14.9
+            },
+            "distance": {
+                "light_years": 11.91
+            },
+            "spectral_type": "G8.5Vp"
+        },
+        {
+            "name": "Gliese 1061",
+            "right_ascension": {
+                "hours": 3,
+                "minutes": 35,
+                "seconds": 59.7
+            },
+            "declination": {
+                "degrees": -44,
+                "minutes": 30,
+                "seconds": 45
+            },
+            "distance": {
+                "light_years": 11.98
+            },
+            "spectral_type": "M5.5V"
+        },
+        {
+            "name": "YZ Ceti",
+            "right_ascension": {
+                "hours": 1,
+                "minutes": 12,
+                "seconds": 30.6
+            },
+            "declination": {
+                "degrees": -16,
+                "minutes": 59,
+                "seconds": 56
+            },
+            "distance": {
+                "light_years": 12.11
+            },
+            "spectral_type": "M4.5V"
+        },
+        {
+            "name": "\u00c9toile de Luyten",
+            "right_ascension": {
+                "hours": 7,
+                "minutes": 27,
+                "seconds": 24.5
+            },
+            "declination": {
+                "degrees": 5,
+                "minutes": 13,
+                "seconds": 33
+            },
+            "distance": {
+                "light_years": 12.35
+            },
+            "spectral_type": "M3.5Vn"
+        },
+        {
+            "name": "\u00c9toile de Teegarden",
+            "right_ascension": {
+                "hours": 2,
+                "minutes": 53,
+                "seconds": 0.0
+            },
+            "declination": {
+                "degrees": 16,
+                "minutes": 52,
+                "seconds": 52
+            },
+            "distance": {
+                "light_years": 12.49
+            },
+            "spectral_type": "M6.5V"
         }
     ],
     "multiple_star_systems": [
@@ -183,7 +370,7 @@
             ]
         },
         {
-            "name": "Alpha Canis Majoris",
+            "name": "Sirius",
             "stars": [
                 {
                     "name": "Sirius A",
@@ -218,6 +405,313 @@
                         "light_years": 8.6
                     },
                     "spectral_type": "DA2"
+                }
+            ]
+        },
+        {
+            "name": "Gliese 65",
+            "stars": [
+                {
+                    "name": "BL Ceti",
+                    "right_ascension": {
+                        "hours": 1,
+                        "minutes": 39,
+                        "seconds": 1.3
+                    },
+                    "declination": {
+                        "degrees": -17,
+                        "minutes": 57,
+                        "seconds": 1
+                    },
+                    "distance": {
+                        "light_years": 8.7
+                    },
+                    "spectral_type": "M5.5Ve"
+                },
+                {
+                    "name": "UV Ceti",
+                    "right_ascension": {
+                        "hours": 1,
+                        "minutes": 39,
+                        "seconds": 1.3
+                    },
+                    "declination": {
+                        "degrees": -17,
+                        "minutes": 57,
+                        "seconds": 1
+                    },
+                    "distance": {
+                        "light_years": 8.7
+                    },
+                    "spectral_type": "M6.0Ve"
+                }
+            ]
+        },
+        {
+            "name": "EZ Aquarii",
+            "stars": [
+                {
+                    "name": "EZ Aquarii A",
+                    "right_ascension": {
+                        "hours": 22,
+                        "minutes": 38,
+                        "seconds": 33.4
+                    },
+                    "declination": {
+                        "degrees": -15,
+                        "minutes": 17,
+                        "seconds": 57
+                    },
+                    "distance": {
+                        "light_years": 8.7
+                    },
+                    "spectral_type": "M5.5Ve"
+                },
+                {
+                    "name": "EZ Aquarii B",
+                    "right_ascension": {
+                        "hours": 22,
+                        "minutes": 38,
+                        "seconds": 33.4
+                    },
+                    "declination": {
+                        "degrees": -15,
+                        "minutes": 17,
+                        "seconds": 57
+                    },
+                    "distance": {
+                        "light_years": 8.7
+                    },
+                    "spectral_type": "M6.0Ve"
+                },
+                {
+                    "name": "EZ Aquarii C",
+                    "right_ascension": {
+                        "hours": 22,
+                        "minutes": 38,
+                        "seconds": 33.4
+                    },
+                    "declination": {
+                        "degrees": -15,
+                        "minutes": 17,
+                        "seconds": 57
+                    },
+                    "distance": {
+                        "light_years": 8.7
+                    },
+                    "spectral_type": "M6.0Ve"
+                }
+            ]
+        },
+        {
+            "name": "Procyon",
+            "stars": [
+                {
+                    "name": "Procyon A",
+                    "right_ascension": {
+                        "hours": 7,
+                        "minutes": 39,
+                        "seconds": 18
+                    },
+                    "declination": {
+                        "degrees": 5,
+                        "minutes": 13,
+                        "seconds": 30
+                    },
+                    "distance": {
+                        "light_years": 11.46
+                    },
+                    "spectral_type": "F5IV-V"
+                },
+                {
+                    "name": "Procyon B",
+                    "right_ascension": {
+                        "hours": 7,
+                        "minutes": 39,
+                        "seconds": 18
+                    },
+                    "declination": {
+                        "degrees": 5,
+                        "minutes": 13,
+                        "seconds": 30
+                    },
+                    "distance": {
+                        "light_years": 11.46
+                    },
+                    "spectral_type": "DQZ"
+                }
+            ]
+        },
+        {
+            "name": "61 Cygni",
+            "stars": [
+                {
+                    "name": "61 Cygni A",
+                    "right_ascension": {
+                        "hours": 21,
+                        "minutes": 6,
+                        "seconds": 53.9
+                    },
+                    "declination": {
+                        "degrees": 38,
+                        "minutes": 44,
+                        "seconds": 58
+                    },
+                    "distance": {
+                        "light_years": 11.4
+                    },
+                    "spectral_type": "K5.0V"
+                },
+                {
+                    "name": "61 Cygni B",
+                    "right_ascension": {
+                        "hours": 21,
+                        "minutes": 6,
+                        "seconds": 55.3
+                    },
+                    "declination": {
+                        "degrees": 38,
+                        "minutes": 44,
+                        "seconds": 31
+                    },
+                    "distance": {
+                        "light_years": 11.4
+                    },
+                    "spectral_type": "K7.0V"
+                }
+            ]
+        },
+        {
+            "name": "Struve 2398",
+            "stars": [
+                {
+                    "name": "Struve 2398 A",
+                    "right_ascension": {
+                        "hours": 18,
+                        "minutes": 42,
+                        "seconds": 46.7
+                    },
+                    "declination": {
+                        "degrees": 59,
+                        "minutes": 37,
+                        "seconds": 49
+                    },
+                    "distance": {
+                        "light_years": 11.49
+                    },
+                    "spectral_type": "M3.0V"
+                },
+                {
+                    "name": "Struve 2398 B",
+                    "right_ascension": {
+                        "hours": 18,
+                        "minutes": 42,
+                        "seconds": 46.9
+                    },
+                    "declination": {
+                        "degrees": 59,
+                        "minutes": 37,
+                        "seconds": 37
+                    },
+                    "distance": {
+                        "light_years": 11.49
+                    },
+                    "spectral_type": "M3.5V"
+                }
+            ]
+        },
+        {
+            "name": "Groombridge 34",
+            "stars": [
+                {
+                    "name": "GX Andromedae",
+                    "right_ascension": {
+                        "hours": 0,
+                        "minutes": 18,
+                        "seconds": 22.9
+                    },
+                    "declination": {
+                        "degrees": 44,
+                        "minutes": 1,
+                        "seconds": 23
+                    },
+                    "distance": {
+                        "light_years": 11.62
+                    },
+                    "spectral_type": "M1.5V"
+                },
+                {
+                    "name": "GQ Andromedae",
+                    "right_ascension": {
+                        "hours": 0,
+                        "minutes": 18,
+                        "seconds": 22.9
+                    },
+                    "declination": {
+                        "degrees": 44,
+                        "minutes": 1,
+                        "seconds": 23
+                    },
+                    "distance": {
+                        "light_years": 11.62
+                    },
+                    "spectral_type": "M3.5V"
+                }
+            ]
+        },
+        {
+            "name": "Epsilon Indi",
+            "stars": [
+                {
+                    "name": "Epsilon Indi A",
+                    "right_ascension": {
+                        "hours": 22,
+                        "minutes": 3,
+                        "seconds": 21.7
+                    },
+                    "declination": {
+                        "degrees": -56,
+                        "minutes": 47,
+                        "seconds": 9
+                    },
+                    "distance": {
+                        "light_years": 11.86
+                    },
+                    "spectral_type": "K5Ve"
+                },
+                {
+                    "name": "Epsilon Indi B",
+                    "right_ascension": {
+                        "hours": 22,
+                        "minutes": 4,
+                        "seconds": 10.5
+                    },
+                    "declination": {
+                        "degrees": -56,
+                        "minutes": 46,
+                        "seconds": 58
+                    },
+                    "distance": {
+                        "light_years": 11.86
+                    },
+                    "spectral_type": "T1.0V"
+                },
+                {
+                    "name": "Epsilon Indi C",
+                    "right_ascension": {
+                        "hours": 22,
+                        "minutes": 4,
+                        "seconds": 10.5
+                    },
+                    "declination": {
+                        "degrees": -56,
+                        "minutes": 46,
+                        "seconds": 58
+                    },
+                    "distance": {
+                        "light_years": 11.86
+                    },
+                    "spectral_type": "T6.0V"
                 }
             ]
         }
