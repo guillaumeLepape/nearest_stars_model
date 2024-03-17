@@ -95,7 +95,7 @@ def star_class_color(star_class: StarClass) -> str:
         StarClass.A: "#FFFFFF",
         StarClass.F: "#FFFFE0",
         StarClass.G: "#FFFF00",
-        StarClass.K: "#FFFFE0",
+        StarClass.K: "#FFA500",
         StarClass.M: "#FF0000",
         StarClass.L: "#FF6347",
         StarClass.T: "#FF69B4",
@@ -128,7 +128,39 @@ def display_plot(nearest_stars: NearestStars) -> None:
         ax.scatter(x, y, z, c=star_class_color(star.star_class))
         ax.text(x, y, z, star.name)
 
-    lim = 10
+    for system in nearest_stars.multiple_star_systems:
+        x, y, z = spherical_to_cartesian(
+            star.distance,
+            hours_to_radian(
+                system.stars[0].right_ascension.hours,
+                system.stars[0].right_ascension.minutes,
+                system.stars[0].right_ascension.seconds,
+            ),
+            dms_to_radians(
+                system.stars[0].declination.degrees,
+                system.stars[0].declination.minutes,
+                system.stars[0].declination.seconds,
+            ),
+        )
+
+        if len(system.stars) == 2:
+            ax.scatter(
+                [x, x],
+                [y, y],
+                [z - 0.2, z + 0.2],
+                c=[star_class_color(star.star_class) for star in system.stars],
+            )
+        elif len(system.stars) == 3:
+            ax.scatter(
+                [x, x, x],
+                [y, y, y],
+                [z - 0.4, z, z + 0.4],
+                c=[star_class_color(star.star_class) for star in system.stars],
+            )
+
+        ax.text(x, y, z, system.name)
+
+    lim = 7
 
     ax.set_xlim(-lim, lim)
     ax.set_ylim(-lim, lim)
