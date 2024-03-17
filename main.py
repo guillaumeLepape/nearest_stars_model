@@ -5,7 +5,7 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class RightAscension(BaseModel):
@@ -42,7 +42,7 @@ class Star(BaseModel):
 
 class MultipleStarSystem(BaseModel):
     name: str
-    stars: list[Star]
+    stars: list[Star] = Field(min_length=2)
 
     model_config = ConfigDict(extra="forbid")
 
@@ -60,16 +60,16 @@ def parse_nearest_stars_data() -> NearestStars:
     return NearestStars.model_validate(json.loads(path.read_text()))
 
 
-def spherical_to_cartesian(rho: float, theta: float, phi: float) -> tuple[float, float, float]:
-    x = rho * np.cos(phi) * np.sin(theta)
-    y = rho * np.cos(phi) * -np.cos(theta)
-    z = rho * np.sin(phi)
+def spherical_to_cartesian(r: float, theta: float, phi: float) -> tuple[float, float, float]:
+    x = r * np.cos(phi) * np.sin(theta)
+    y = r * np.cos(phi) * -np.cos(theta)
+    z = r * np.sin(phi)
 
     return x, y, z
 
 
-def hours_to_radian(hours: int, minutes: int, seconds: float) -> float:
-    return dms_to_radians(hours * 360 / 24, minutes, seconds)
+def hms_to_radians(hours: int, minutes: int, seconds: float) -> float:
+    return dms_to_radians(hours, minutes, seconds) * 15  # since 1 houyr = 15 degrees
 
 
 def dms_to_radians(degrees: int | float, minutes: int, seconds: float) -> float:
@@ -100,7 +100,7 @@ def display_plot(nearest_stars: NearestStars) -> None:
     for star in nearest_stars.single_star_systems:
         x, y, z = spherical_to_cartesian(
             star.distance.light_years,
-            hours_to_radian(
+            hms_to_radians(
                 star.right_ascension.hours,
                 star.right_ascension.minutes,
                 star.right_ascension.seconds,
@@ -115,8 +115,8 @@ def display_plot(nearest_stars: NearestStars) -> None:
 
     for system in nearest_stars.multiple_star_systems:
         x, y, z = spherical_to_cartesian(
-            star.distance.light_years,
-            hours_to_radian(
+            system.stars[0].distance.light_years,
+            hms_to_radians(
                 system.stars[0].right_ascension.hours,
                 system.stars[0].right_ascension.minutes,
                 system.stars[0].right_ascension.seconds,
