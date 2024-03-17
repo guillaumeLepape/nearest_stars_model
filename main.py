@@ -78,7 +78,7 @@ def dms_to_radians(degrees: int | float, minutes: int, seconds: float) -> float:
 
 def displayed_color(spectral_type: str) -> str:
     mapping = {
-        "A": "#FFFFFF",
+        "A": "#D7E1FF",
         "F": "#FFFFE0",
         "G": "#FFFF00",
         "K": "#FFA500",
@@ -129,19 +129,15 @@ def display_plot(nearest_stars: NearestStars) -> None:
         )
 
         if len(system.stars) == 2:
-            ax.scatter(
-                [x, x],
-                [y, y],
-                [z - 0.2, z + 0.2],
-                c=[displayed_color(star.spectral_type) for star in system.stars],
-            )
+            for offset, color in zip(
+                (0.3, -0.3), [displayed_color(star.spectral_type) for star in system.stars]
+            ):
+                ax.scatter(x, y, z + offset, c=color)
         elif len(system.stars) == 3:
-            ax.scatter(
-                [x, x, x],
-                [y, y, y],
-                [z - 0.4, z, z + 0.4],
-                c=[displayed_color(star.spectral_type) for star in system.stars],
-            )
+            for offset, color in zip(
+                (0.6, 0, -0.6), [displayed_color(star.spectral_type) for star in system.stars]
+            ):
+                ax.scatter(x, y, z + offset, c=color)
 
         ax.text(x, y, z, system.name)
 
