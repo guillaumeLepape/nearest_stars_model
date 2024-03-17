@@ -37,13 +37,6 @@ class Declination(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
 
-class Center(BaseModel):
-    name: str
-    star_class: StarClass = Field(alias="class")
-
-    model_config = ConfigDict(extra="forbid")
-
-
 class Distance(BaseModel):
     light_years: float
 
@@ -68,7 +61,6 @@ class MultipleStarSystem(BaseModel):
 
 
 class NearestStars(BaseModel):
-    center: Center
     single_star_systems: list[Star]
     multiple_star_systems: list[MultipleStarSystem]
 
@@ -115,10 +107,6 @@ def star_class_color(star_class: StarClass) -> str:
 
 def display_plot(nearest_stars: NearestStars) -> None:
     ax = plt.figure().add_subplot(projection="3d")
-
-    center_location = (0, 0, 0)
-    ax.scatter(*center_location, c=star_class_color(nearest_stars.center.star_class))
-    ax.text(*center_location, nearest_stars.center.name)
 
     for star in nearest_stars.single_star_systems:
         x, y, z = spherical_to_cartesian(

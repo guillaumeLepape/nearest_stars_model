@@ -1,9 +1,22 @@
 {
-    "center": {
-        "name": "Sun",
-        "class": "G"
-    },
     "single_star_systems": [
+        {
+            "name": "Soleil",
+            "right_ascension": {
+                "hours": 0,
+                "minutes": 0,
+                "seconds": 0
+            },
+            "declination": {
+                "degrees": 0,
+                "minutes": 0,
+                "seconds": 0
+            },
+            "distance": {
+                "light_years": 0
+            },
+            "class": "G"
+        },
         {
             "name": "\u00c9toile de Barnard",
             "right_ascension": {
