@@ -18,6 +18,7 @@ class StarClass(str, Enum):
     L = "L"
     T = "T"
     Y = "Y"
+    D = "D"
 
 
 class RightAscension(BaseModel):
@@ -106,6 +107,7 @@ def star_class_color(star_class: StarClass) -> str:
         StarClass.L: "#FF6347",
         StarClass.T: "#FF69B4",
         StarClass.Y: "#DA70D6",
+        StarClass.D: "#808080",
     }
 
     return mapping[star_class]
@@ -166,7 +168,7 @@ def display_plot(nearest_stars: NearestStars) -> None:
 
         ax.text(x, y, z, system.name)
 
-    lim = 7
+    lim = 12.5
 
     ax.set_xlim(-lim, lim)
     ax.set_ylim(-lim, lim)

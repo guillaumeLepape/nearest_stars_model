@@ -54,6 +54,23 @@
                 "light_years": 7.78
             },
             "class": "M"
+        },
+        {
+            "name": "Lalande 21185",
+            "right_ascension": {
+                "hours": 11,
+                "minutes": 3,
+                "seconds": 20.19
+            },
+            "declination": {
+                "degrees": 35,
+                "minutes": 58,
+                "seconds": 11.3
+            },
+            "distance": {
+                "light_years": 8.31
+            },
+            "class": "M"
         }
     ],
     "multiple_star_systems": [
@@ -149,6 +166,45 @@
                         "light_years": 6.59
                     },
                     "class": "T"
+                }
+            ]
+        },
+        {
+            "name": "Alpha Canis Majoris",
+            "stars": [
+                {
+                    "name": "Sirius A",
+                    "right_ascension": {
+                        "hours": 6,
+                        "minutes": 45,
+                        "seconds": 8
+                    },
+                    "declination": {
+                        "degrees": -16,
+                        "minutes": 42,
+                        "seconds": 58
+                    },
+                    "distance": {
+                        "light_years": 8.6
+                    },
+                    "class": "A"
+                },
+                {
+                    "name": "Sirius B",
+                    "right_ascension": {
+                        "hours": 6,
+                        "minutes": 45,
+                        "seconds": 8
+                    },
+                    "declination": {
+                        "degrees": -16,
+                        "minutes": 42,
+                        "seconds": 58
+                    },
+                    "distance": {
+                        "light_years": 8.6
+                    },
+                    "class": "D"
                 }
             ]
         }
