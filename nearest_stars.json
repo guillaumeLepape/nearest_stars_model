@@ -16,7 +16,9 @@
                 "minutes": 41,
                 "seconds": 36
             },
-            "distance": 5.96,
+            "distance": {
+                "light_years": 5.96
+            },
             "class": "M"
         },
         {
@@ -31,7 +33,9 @@
                 "minutes": 14,
                 "seconds": 42.5
             },
-            "distance": 7.43,
+            "distance": {
+                "light_years": 7.43
+            },
             "class": "Y"
         },
         {
@@ -46,7 +50,9 @@
                 "minutes": 0,
                 "seconds": 52.7
             },
-            "distance": 7.78,
+            "distance": {
+                "light_years": 7.78
+            },
             "class": "M"
         }
     ],
@@ -66,7 +72,9 @@
                         "minutes": 50,
                         "seconds": 2
                     },
-                    "distance": 4.37,
+                    "distance": {
+                        "light_years": 4.37
+                    },
                     "class": "G"
                 },
                 {
@@ -81,7 +89,9 @@
                         "minutes": 50,
                         "seconds": 14
                     },
-                    "distance": 4.37,
+                    "distance": {
+                        "light_years": 4.37
+                    },
                     "class": "K"
                 },
                 {
@@ -96,7 +106,9 @@
                         "minutes": 40,
                         "seconds": 46
                     },
-                    "distance": 4.37,
+                    "distance": {
+                        "light_years": 4.37
+                    },
                     "class": "M"
                 }
             ]
@@ -116,7 +128,9 @@
                         "minutes": 19,
                         "seconds": 48
                     },
-                    "distance": 6.59,
+                    "distance": {
+                        "light_years": 6.59
+                    },
                     "class": "L"
                 },
                 {
@@ -131,7 +145,9 @@
                         "minutes": 19,
                         "seconds": 48
                     },
-                    "distance": 6.59,
+                    "distance": {
+                        "light_years": 6.59
+                    },
                     "class": "T"
                 }
             ]

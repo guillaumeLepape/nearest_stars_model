@@ -43,11 +43,17 @@ class Center(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
 
+class Distance(BaseModel):
+    light_years: float
+
+    model_config = ConfigDict(extra="forbid")
+
+
 class Star(BaseModel):
     name: str
     right_ascension: RightAscension
     declination: Declination
-    distance: float
+    distance: Distance
     star_class: StarClass = Field(alias="class")
 
     model_config = ConfigDict(extra="forbid")
@@ -114,7 +120,7 @@ def display_plot(nearest_stars: NearestStars) -> None:
 
     for star in nearest_stars.single_star_systems:
         x, y, z = spherical_to_cartesian(
-            star.distance,
+            star.distance.light_years,
             hours_to_radian(
                 star.right_ascension.hours,
                 star.right_ascension.minutes,
