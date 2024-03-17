@@ -1,9 +1,11 @@
 from __future__ import annotations
 
-from pydantic import BaseModel, Field, ConfigDict
+import json
+from decimal import Decimal
 from enum import Enum
 from pathlib import Path
-import json
+
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class StarClass(str, Enum):
@@ -20,7 +22,7 @@ class StarClass(str, Enum):
 class RightAscension(BaseModel):
     hours: int
     minutes: int
-    seconds: int
+    seconds: Decimal
 
     model_config = ConfigDict(extra="forbid")
 
@@ -28,7 +30,7 @@ class RightAscension(BaseModel):
 class Declination(BaseModel):
     degrees: int
     minutes: int
-    seconds: int
+    seconds: Decimal
 
     model_config = ConfigDict(extra="forbid")
 
@@ -44,14 +46,8 @@ class Star(BaseModel):
     name: str
     right_ascension: RightAscension
     declination: Declination
-    distance: float
+    distance: Decimal
     star_class: StarClass = Field(alias="class")
-
-    model_config = ConfigDict(extra="forbid")
-
-
-class SingleStarSystem(BaseModel):
-    planets: list[str]
 
     model_config = ConfigDict(extra="forbid")
 
@@ -65,7 +61,7 @@ class MultipleStarSystem(BaseModel):
 
 class NearestStars(BaseModel):
     center: Center
-    single_star_systems: list[SingleStarSystem]
+    single_star_systems: list[Star]
     multiple_star_systems: list[MultipleStarSystem]
 
     model_config = ConfigDict(extra="forbid")

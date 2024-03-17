@@ -3,7 +3,53 @@
         "name": "Sun",
         "class": "G"
     },
-    "single_star_systems": [],
+    "single_star_systems": [
+        {
+            "name": "\u00c9toile de Barnard",
+            "right_ascension": {
+                "hours": 17,
+                "minutes": 57,
+                "seconds": 48.5
+            },
+            "declination": {
+                "degrees": 4,
+                "minutes": 41,
+                "seconds": 36
+            },
+            "distance": 5.96,
+            "class": "M"
+        },
+        {
+            "name": "WISE 0855\u22120714",
+            "right_ascension": {
+                "hours": 8,
+                "minutes": 55,
+                "seconds": 10.83
+            },
+            "declination": {
+                "degrees": -7,
+                "minutes": 14,
+                "seconds": 42.5
+            },
+            "distance": 7.43,
+            "class": "Y"
+        },
+        {
+            "name": "Wolf 359",
+            "right_ascension": {
+                "hours": 10,
+                "minutes": 56,
+                "seconds": 28.99
+            },
+            "declination": {
+                "degrees": 7,
+                "minutes": 0,
+                "seconds": 52.7
+            },
+            "distance": 7.78,
+            "class": "M"
+        }
+    ],
     "multiple_star_systems": [
         {
             "name": "Alpha Centauri",
@@ -52,6 +98,41 @@
                     },
                     "distance": 4.37,
                     "class": "M"
+                }
+            ]
+        },
+        {
+            "name": "Luhman 16",
+            "stars": [
+                {
+                    "name": "Luhman 16 A",
+                    "right_ascension": {
+                        "hours": 10,
+                        "minutes": 49,
+                        "seconds": 18
+                    },
+                    "declination": {
+                        "degrees": -53,
+                        "minutes": 19,
+                        "seconds": 48
+                    },
+                    "distance": 6.59,
+                    "class": "L"
+                },
+                {
+                    "name": "Luhman 16 B",
+                    "right_ascension": {
+                        "hours": 10,
+                        "minutes": 49,
+                        "seconds": 18
+                    },
+                    "declination": {
+                        "degrees": -53,
+                        "minutes": 19,
+                        "seconds": 48
+                    },
+                    "distance": 6.59,
+                    "class": "T"
                 }
             ]
         }
