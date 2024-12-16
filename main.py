@@ -69,7 +69,7 @@ def spherical_to_cartesian(r: float, theta: float, phi: float) -> tuple[float, f
 
 
 def hms_to_radians(hours: int, minutes: int, seconds: float) -> float:
-    return dms_to_radians(hours, minutes, seconds) * 15  # since 1 houyr = 15 degrees
+    return dms_to_radians(hours, minutes, seconds) * 15  # since 1 hour = 15 degrees
 
 
 def dms_to_radians(degrees: int | float, minutes: int, seconds: float) -> float:
