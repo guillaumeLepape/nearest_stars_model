@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v5.0.0
     hooks:
       - id: fix-byte-order-marker
       - id: trailing-whitespace
@@ -17,14 +17,14 @@ repos:
         args: [--branch, main]
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.3.2
+    rev: v0.8.3
     hooks:
       - id: ruff
         args: [--exit-non-zero-on-fix]
       - id: ruff-format
 
   - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.17
+    rev: 0.7.19
     hooks:
       - id: mdformat
 
@@ -35,7 +35,7 @@ repos:
         types: [yaml]
 
   - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-    rev: v2.12.0
+    rev: v2.14.0
     hooks:
       - id: pretty-format-toml
         args: [--autofix, --indent, "4", --trailing-commas, --no-sort]
